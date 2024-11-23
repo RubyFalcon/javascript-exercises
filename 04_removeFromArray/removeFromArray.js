@@ -1,9 +1,12 @@
-const removeFromArray = function(array, n) {
+const removeFromArray = function(array, ...args) {
     let returnArray = [];
     array.forEach( (item) => {
-        if (item != n){
-            returnArray.push(item);
-        } 
+        args.forEach(index => {
+            if (item != index){
+                returnArray.push(item);
+            } 
+        })
+        
     }
 
     );
