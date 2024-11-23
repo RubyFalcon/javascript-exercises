@@ -1,18 +1,18 @@
 const removeFromArray = function(array, ...args) {
     let returnArray = [];
     array.forEach( (item) => {
-        args.forEach(index => {
-            if (item != index){
+        
+            if (!args.includes(item)){
                 returnArray.push(item);
             } 
         })
-        
+        return returnArray;
     }
 
-    );
+    
         
-    return returnArray;
-    }
+    
+    
    
 
 // Do not edit below this line
