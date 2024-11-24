@@ -1,12 +1,5 @@
 const removeFromArray = function(array, ...args) {
-    let returnArray = [];
-    array.forEach( (item) => {
-        
-            if (!args.includes(item)){
-                returnArray.push(item);
-            } 
-        })
-        return returnArray;
+        return array.filter( (item) =>!args.includes(item));
     }
 
     
